@@ -28,37 +28,39 @@
     <div class="middle">
       <p>Let's do this!</p>
 
-      <form id="myform" action="./index.html" method="post">
+      <form id="myform" action="" method="">
         <div>
           <label for="first-name">FIRST NAME</label>
-          <input type="text" id="first-name">
+          <input type="text" id="first-name" required>
           
           <label for="last-name">LAST NAME</label>
-          <input type="text" id="last-name">
+          <input type="text" id="last-name" required>
         </div>
         
         <div>
           <label for="email">EMAIL</label>
-          <input type="email" id="email">
+          <input type="email" id="email" required>
           
           <label for="phone">PHONE NUMBER</label>
           <input type="tel" id="phone">
         </div>
         
-        <div>
+        <div class="error">
           <label for="pw">PASSWORD</label>
-          <input type="password" id="pw">
+          <input type="password" id="pw" required>
           
           <label for="confirm">CONFIRM PASSWORD</label>
-          <input type="password" id="confirm">
+          <input type="password" id="confirm" required>
         </div>
 
       </form>
     </div>
     <div class="bottom">
-      <button type="submit" form="myform">Create Account</button>
+      <button form="myform">Create Account</button>
       <p>Already have an account? <a href="">Log in</a></p>
     </div>
   </div>
 </body>
 </html>
+
+

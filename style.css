@@ -122,3 +122,16 @@ div label {
   top: 21%;
   left: 28%;
 }
+
+.error input {
+  outline: 1px solid red;
+}
+
+.error > label[for="pw"]::after {
+  content: "* Passwords do not match";
+  position: absolute;
+  color: red;
+  top: 55px;
+  left: 0px;
+  width: 200px;
+}
